@@ -1,0 +1,21 @@
+.calculator {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 200px;
+	margin: auto auto auto auto;
+	align-content: center;
+}
+.but-box {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-around;
+}
+.but-box div {
+	display: flex;
+	justify-content: space-between;
+
+}
+

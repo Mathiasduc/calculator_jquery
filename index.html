@@ -3,43 +3,46 @@
  <head>
      <meta charset="UTF-8">
      <title>Document</title>
+     <link rel="stylesheet" href="style.css">
  </head>
  <body>
-    <div id="display">
-    <span id="str1"></span>
-    <span id="operator"></span>
-    <span id="str2"><br></span>
+    <div class="calculator">
+        <div id="display">
+            <span id="str1"></span>
+            <span id="operator"></span>
+            <span id="str2"><br></span>
+        </div>
+        <div id="result">
+            <br>
+        </div>
+        <div class="but-box">
+            <div>
+                <button class="calculette" data-chiffre="1">1</button>
+                <button class="calculette" data-chiffre="2">2</button>
+                <button class="calculette" data-chiffre="3">3</button>
+                <button class="operator" data-ope="+">+</button>
+            </div>
+            <div>
+                <button class="calculette" data-chiffre="4">4</button>
+                <button class="calculette" data-chiffre="5">5</button>
+                <button class="calculette" data-chiffre="6">6</button>
+                <button class="operator" data-ope="-">-</button>
+            </div>
+            <div>
+                <button class="calculette" data-chiffre="7">7</button>
+                <button class="calculette" data-chiffre="8">8</button>
+                <button class="calculette" data-chiffre="9">9</button>
+                <button class="operator" data-ope="*">*</button>
+            </div>
+            <div>
+                <button class="calculette" data-cancel="cancel">C</button>
+                <button class="calculette" data-canceleverything="canceleverything">CE</button>
+                <button class="operator" data-ope="/">/</button>
+                <button class="compute" data-compute="compute">Calculer</button>
+            </div>
+        </div>
     </div>
-    <div id="result">
-    <br>
-    </div>
-    <div class="container">
-        <div>
-            <button class="calculette" data-chiffre="1">1</button>
-            <button class="calculette" data-chiffre="2">2</button>
-            <button class="calculette" data-chiffre="3">3</button>
-            <button class="operator" data-ope="+">+</button>
-        </div>
-        <div>
-            <button class="calculette" data-chiffre="4">4</button>
-            <button class="calculette" data-chiffre="5">5</button>
-            <button class="calculette" data-chiffre="6">6</button>
-            <button class="operator" data-ope="-">-</button>
-        </div>
-        <div>
-            <button class="calculette" data-chiffre="7">7</button>
-            <button class="calculette" data-chiffre="8">8</button>
-            <button class="calculette" data-chiffre="9">9</button>
-            <button class="operator" data-ope="*">*</button>
-        </div>
-        <div>
-            <button class="calculette" data-cancel="cancel">C</button>
-            <button class="calculette" data-canceleverything="canceleverything">CE</button>
-            <button class="operator" data-ope="/">/</button>
-            <button class="compute" data-compute="compute">Calculer</button>
-        </div>
-    </div>
-    <script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>   
-     <script src="app.js"></script>
+<script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>   
+<script src="app.js"></script>
 </body>
 </html>
